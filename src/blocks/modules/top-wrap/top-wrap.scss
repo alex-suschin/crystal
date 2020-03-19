@@ -21,3 +21,58 @@
         margin-bottom: 22px;
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .top-wrap {
+        min-height: 550px;
+    }
+    .top-wrap .title {
+        font-size: 28px;
+        line-height: 130%;
+    }
+    .desc {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .top-wrap {
+        min-height: 430px;
+        .title {
+            font-size: 23px;
+            line-height: 130%;
+        }
+        .desc {
+            font-size: 15px;
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .top-wrap {
+        min-height: 350px;
+        .title {
+            font-size: 21px;
+            line-height: 118%;
+        }
+        .desc {
+            font-size: 14px;
+            line-height: 118%;
+        }
+        .btn {
+            font-size: 14px;
+            padding: 8px 0 8px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .top-wrap {
+        min-height: 280px;
+    }
+    .top-wrap .title {
+        width: 100%;
+        font-size: 20px;
+    }
+}

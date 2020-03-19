@@ -8,6 +8,7 @@ sans-serif;
     transition: $property;
 }
 
+// @import url("https://fonts.googleapis.com/icon?family=Mateial+Icons");
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/functions";
@@ -98,11 +99,11 @@ button {
 }
 
 h1 {
-    font-weight: normal;
-    font-size: 42px;
-    line-height: 50px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .title {
