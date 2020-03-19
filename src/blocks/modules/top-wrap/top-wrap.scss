@@ -1,0 +1,23 @@
+.top-wrap {
+    position: relative;
+    min-height: 699px;
+    background: url(../img/top-wrap-bg.jpg) no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    padding: 15px 0;
+    .title {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 51px;
+        color: #000000;
+        width: 65%;
+        text-align: left;
+        margin-bottom: 22px;
+    }
+    .desc {
+        width: 50%;
+        margin-bottom: 22px;
+    }
+}

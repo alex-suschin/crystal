@@ -1,0 +1,88 @@
+.news {
+    padding: 59px 0 20px 0;
+}
+
+.news-btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 92px;
+    a {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 49%;
+        min-height: 204px;
+        background-color: #0B4ABE;
+        border-radius: 6px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 0 0 37px 0;
+        box-sizing: border-box;
+    }
+}
+
+.btn-1 {
+    background-image: url(../img/svg/ico1.svg);
+    background-position: center 43px;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.btn-2 {
+    background-image: url(../img/svg/ico2.svg);
+    background-position: center 43px;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.news-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 38px;
+    .title {
+        margin-bottom: 25px;
+    }
+}
+
+.news-box__left {
+    width: 49%;
+}
+
+.news-box__right {
+    width: 48.8%;
+}
+
+.news-box-item {
+    margin-bottom: 50px;
+    width: 90%;
+}
+
+.news-box-item--date {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding: 0 0 0 31px;
+    background: url(../img/svg/clock-ico.svg) no-repeat left top;
+    margin-bottom: 12px;
+}
+
+.news-box-item--title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 17px;
+}
+
+.news-box-item--desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}

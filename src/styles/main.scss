@@ -1,3 +1,13 @@
+$font-stack: 'Montserrat',
+sans-serif;
+@mixin transition($property) {
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -ms-transition: $property;
+    -o-transition: $property;
+    transition: $property;
+}
+
 @import "helpers/variables";
 @import "helpers/mixins";
 @import "helpers/functions";
@@ -5,3 +15,159 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+body {
+    font-family: $font-stack;
+    font-size: 20px;
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal;
+    color: #252525;
+    position: relative;
+    height: 100%;
+    background: #fff;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+}
+
+div,
+section,
+footer,
+.btn {
+    box-sizing: border-box;
+}
+
+a {
+    @include transition(all .1s linear);
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+input:focus {
+    outline: none;
+}
+
+p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0 0 24px 0;
+}
+
+input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px 0 23px;
+    @include transition(all .1s linear);
+    background-color: transparent;
+    font-size: 20px;
+    line-height: 100%;
+    color: #525252;
+    border: none;
+}
+
+input:hover,
+input:focus {}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    padding: 0 0 0 0;
+}
+
+ul li:before {}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @include transition(all .1s linear);
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 50px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.desc {
+    color: #000000;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper {}
+
+.container {
+    position: relative;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.btn {
+    display: block;
+    max-width: 240px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #0B4ABE;
+    border-radius: 12px;
+    padding: 12px 0 12px 0;
+}
+
+.img-wrap {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrap>img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+}
